@@ -1,11 +1,15 @@
-
+import { ProfileBgSvg, ProfileImg } from "../../../../constants";
 
 const ProfileImageSection = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <section className="w-[76%]  relative px-5 mx-auto text-white flex flex-col justify-center gap-4">
+      <img
+        className=" rounded-2xl animate-pulse  shadow-glass mx-auto relative flex-center z-10"
+        src={ProfileImg}
+        alt="Profile"
+      />
+    </section>
+  );
+};
 
-export default ProfileImageSection
+export default ProfileImageSection;

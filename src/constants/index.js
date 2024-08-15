@@ -1,7 +1,11 @@
 //IMGS
 import Signature from "../assets/imgs/signature.png";
+import gggyrate from "../assets/svgs/gggyrate.svg";
+import ProfileImage from "../assets/imgs/Profileimage.png";
 
+export const ProfileBgSvg = gggyrate;
 export const SignatureImgs = Signature;
+export const ProfileImg = ProfileImage;
 
 // ICONS
 import { CiMail } from "react-icons/ci";
