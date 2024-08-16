@@ -1,9 +1,10 @@
 import React from "react";
+import ProjectContainer from "../layout/project/ProjectContainer";
 
 const Projectpage = () => {
   return (
-    <div id="projects" className="min-h-screen w-full bg-primary-900">
-      Projectpage
+    <div id="projects" className="w-full bg-primary-600">
+      <ProjectContainer />
     </div>
   );
 };
