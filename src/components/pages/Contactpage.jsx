@@ -1,9 +1,10 @@
 import React from "react";
+import ContactContainer from "../layout/contact/ContactContainer";
 
 const Contactpage = () => {
   return (
-    <div id="contacts" className="min-h-screen w-full bg-primary-500">
-      Contactpage
+    <div id="projects" className="w-full bg-primary-600">
+      <ContactContainer />
     </div>
   );
 };

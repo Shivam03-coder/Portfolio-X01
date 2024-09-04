@@ -28,10 +28,10 @@ export function Drawerbar() {
     >
       <div className="mb-6 flex items-center justify-between">
         <Typography variant="h4" className="font-Varela">
-          <span className="text-secondary-600">Aishana</span> <span>Singh</span>
+          <span className="text-customPink-600">Aishana</span> <span>Singh</span>
         </Typography>
         <IconButton variant="text">
-          <CloseIcon className="size-10 text-customOrange-600" />
+          <CloseIcon className="size-10 text-customPink-600" />
         </IconButton>
       </div>
       <Navigations />

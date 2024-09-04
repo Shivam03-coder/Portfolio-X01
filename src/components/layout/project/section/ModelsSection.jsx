@@ -1,6 +1,6 @@
 import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
-import { Carousel, Typography } from "@material-tailwind/react";
+import { Carousel } from "@material-tailwind/react";
 import { useMemo } from "react";
 import * as THREE from "three";
 
@@ -21,13 +21,20 @@ const ThreeDModels = ({ path }) => {
     return 2 / maxDimension; // Adjust the size within a standard range
   }, [bbox]);
 
-  // Apply bright and colorful material to the model
-  const applyColorfulMaterial = (object) => {
+  // Apply mixed color material to the model
+  const applyMixedColorMaterial = (object) => {
     object.traverse((child) => {
       if (child.isMesh) {
+        const mixRatio = Math.random(); // Random ratio for blending
+        const mixedColor = new THREE.Color().lerpColors(
+          new THREE.Color('white'), // White
+          new THREE.Color('black'), // Black
+          mixRatio // Blend ratio
+        );
+  
         child.material = new THREE.MeshStandardMaterial({
-          color: new THREE.Color(`hsl(${Math.random() * 360}, 100%, 50%)`), // Random colorful material
-          emissive: new THREE.Color(`hsl(${Math.random() * 360}, 100%, 50%)`), // Emissive for brightness
+          color: mixedColor,
+          emissive: mixedColor,
           emissiveIntensity: 1.5,
         });
       }
@@ -35,14 +42,14 @@ const ThreeDModels = ({ path }) => {
   };
 
   useMemo(() => {
-    applyColorfulMaterial(model.scene);
+    applyMixedColorMaterial(model.scene);
   }, [model]);
 
   return (
     <primitive
       object={model.scene}
       scale={[scale, scale, scale]}
-      position={[0, (-bbox.y * scale) / 2, 0]} // Center the model
+      position={[0, -bbox.y * scale / 2, 0]} // Center the model vertically
     />
   );
 };
@@ -52,7 +59,7 @@ const ModelsSection = ({ model }) => {
     <Carousel
       transition={{ duration: 2 }}
       key={model.id}
-      className="border rounded-2xl bg-gray-800 border-customOrange-600 shadow-glass mb-16"
+      className="border rounded-2xl bg-gray-800 border-customPink-600 shadow-glass mb-16"
       style={{ height: "300px", width: "300px" }}
     >
       <img

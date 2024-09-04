@@ -18,6 +18,7 @@ import atm from "../assets/imgs/atm.png";
 import armorcreate from "../assets/imgs/armorcreate.png";
 import arcon_cfrate from "../assets/imgs/arcon_cfrate.png";
 import apc from "../assets/imgs/apc.png";
+import contact from "../assets/imgs/contactimg.png";
 
 export const ProfileBgSvg = gggyrate;
 export const SignatureImgs = Signature;
@@ -39,6 +40,7 @@ export const AtmImage = atm;
 export const ArmorCreateImage = armorcreate;
 export const ArconCfrateImage = arcon_cfrate;
 export const ApCImage = apc;
+export const ContactImage = contact;
 
 // ICONS
 import { CiMail } from "react-icons/ci";
