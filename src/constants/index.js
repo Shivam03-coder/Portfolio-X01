@@ -19,11 +19,14 @@ import armorcreate from "../assets/imgs/armorcreate.png";
 import arcon_cfrate from "../assets/imgs/arcon_cfrate.png";
 import apc from "../assets/imgs/apc.png";
 import contact from "../assets/imgs/contactimg.png";
+import Experience from "../assets/imgs/Experience.png";
 
 export const ProfileBgSvg = gggyrate;
 export const SignatureImgs = Signature;
 export const ProfileImg = ProfileImage;
+export const ExperienceImg = Experience;
 
+// MODELS IMAGES IN 3D SHOW
 export const RobotImage = robot;
 export const PouchesImage = pouches;
 export const PipeImage = pipe;
@@ -41,6 +44,20 @@ export const ArmorCreateImage = armorcreate;
 export const ArconCfrateImage = arcon_cfrate;
 export const ApCImage = apc;
 export const ContactImage = contact;
+
+
+// IMAGES IN SLIDE SHOW
+
+import AnimeHat from "../assets/slidesImgs/anime hat.png";
+import Crate from "../assets/slidesImgs/crate.png";
+import Spaceship from "../assets/slidesImgs/spaceship.png";
+
+// Export them with custom names
+export const AnimeHatImage = AnimeHat;
+export const CrateImage = Crate;
+export const SpaceshipImage = Spaceship;
+
+
 
 // ICONS
 import { CiMail } from "react-icons/ci";

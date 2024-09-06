@@ -7,7 +7,7 @@ const ContactImageSection = () => {
       <img
         src={ContactImage}
         alt="Contact"
-        className="w-full max-w-full h-auto"
+        className="w-[90%] mx-auto max-w-full h-auto"
       />
     </section>
   );

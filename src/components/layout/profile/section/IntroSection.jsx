@@ -3,7 +3,7 @@ import React from "react";
 
 const IntroSection = () => {
   return (
-    <section className="w-[96%] px-5 mx-auto text-white order-2 md:order-1  flex flex-col justify-center gap-4">
+    <section className="w-[90%] px-5 mx-auto text-white order-2 md:order-1  flex flex-col justify-center gap-4">
       <Typography variant="h1">
         Welcome to My 3D Art{" "}
         <span className="text-customPink-500">Portfolio.</span>

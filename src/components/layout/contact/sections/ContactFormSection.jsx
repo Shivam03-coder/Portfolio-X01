@@ -8,6 +8,9 @@ import {
 } from "@material-tailwind/react";
 import { useFormik } from "formik";
 import { contactUsFormSchema } from "../../../shared/validations/validation";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useSendMessageMutation } from "../../../../app-state/api/Apiendpoints";
 
 const initialValues = {
   firstName: "",
@@ -18,9 +21,21 @@ const initialValues = {
 };
 
 const ContactFormSection = () => {
+  const [SendMessage, { isLoading }] = useSendMessageMutation();
+
   const formik = useFormik({
     initialValues,
     validationSchema: contactUsFormSchema,
+    onSubmit: async (values, action) => {
+      try {
+        await SendMessage(values);
+        toast.success("Mail Sent Sucessfully.");
+        action.resetForm();
+      } catch (error) {
+        console.log(error);
+        toast.error("Failed to Send Mail.");
+      }
+    },
   });
 
   return (
@@ -166,7 +181,7 @@ const ContactFormSection = () => {
           type="submit"
           className="text-black text-sm bg-customPink-500 flex-center"
         >
-          SEND MESSAGE
+          {isLoading ? <Spinner className="h-6 w-6" /> : "SEND MESSAGE"}
         </Button>
       </form>
     </section>

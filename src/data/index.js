@@ -7,7 +7,6 @@ import {
   OfficechairImage,
   MachineryImage,
   LeverthingImage,
-  ElWallClockImage,
   GrenadesImage,
   CraftingTableImage,
   BagsImage,
@@ -74,13 +73,13 @@ export const ThreeDmodelsData = [
     label: "Lever Thing",
     modelimg: LeverthingImage,
   },
-  {
-    id: 9,
-    path: "/elwallclock.glb",
-    position: [0, 0, 0],
-    label: "Wall Clock",
-    modelimg: ElWallClockImage,
-  },
+  // {
+  //   id: 9,
+  //   path: "/elwallclock.glb",
+  //   position: [0, 0, 0],
+  //   label: "Wall Clock",
+  //   modelimg: ElWallClockImage,
+  // },
   {
     id: 10,
     path: "/grenades.glb",
