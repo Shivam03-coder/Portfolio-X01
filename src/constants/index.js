@@ -48,14 +48,40 @@ export const ContactImage = contact;
 
 // IMAGES IN SLIDE SHOW
 
-import AnimeHat from "../assets/slidesImgs/anime hat.png";
-import Crate from "../assets/slidesImgs/crate.png";
-import Spaceship from "../assets/slidesImgs/spaceship.png";
+import one from "../assets/aishaimgs/1.jpeg";
+import two from "../assets/aishaimgs/2.jpeg";
+import three from "../assets/aishaimgs/3.jpeg";
+import four from "../assets/aishaimgs/4.jpeg";
+import five from "../assets/aishaimgs/5.jpeg";
+import six from "../assets/aishaimgs/6.jpeg";
+import seven from "../assets/aishaimgs/7.jpeg";
+import eight from "../assets/aishaimgs/8.jpeg";
+import nine from "../assets/aishaimgs/9.jpeg";
+import ten from "../assets/aishaimgs/10.jpeg";
+import eleven from "../assets/aishaimgs/11.jpeg";
+import twelve from "../assets/aishaimgs/12.jpeg";
+import thirteen from "../assets/aishaimgs/13.jpeg";
+import fourteen from "../assets/aishaimgs/14.jpeg";
+import fifteen from "../assets/aishaimgs/15.jpeg";
+import sixteen from "../assets/aishaimgs/16.jpeg";
 
-// Export them with custom names
-export const AnimeHatImage = AnimeHat;
-export const CrateImage = Crate;
-export const SpaceshipImage = Spaceship;
+// Export with custom names
+export const ImageOne = one;
+export const ImageTwo = two;
+export const ImageThree = three;
+export const ImageFour = four;
+export const ImageFive = five;
+export const ImageSix = six;
+export const ImageSeven = seven;
+export const ImageEight = eight;
+export const ImageNine = nine;
+export const ImageTen = ten;
+export const ImageEleven = eleven;
+export const ImageTwelve = twelve;
+export const ImageThirteen = thirteen;
+export const ImageFourteen = fourteen;
+export const ImageFifteen = fifteen;
+export const ImageSixteen = sixteen;
 
 
 

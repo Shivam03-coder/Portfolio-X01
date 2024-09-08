@@ -1,9 +1,6 @@
 import { Carousel, IconButton } from "@material-tailwind/react";
-import {
-  AnimeHatImage,
-  CrateImage,
-  SpaceshipImage,
-} from "../../../../constants";
+import { ImageEight, ImageEleven, ImageFifteen, ImageFive, ImageFour, ImageFourteen, ImageNine, ImageOne, ImageSeven, ImageSix, ImageSixteen, ImageTen, ImageThirteen, ImageThree, ImageTwelve, ImageTwo } from "../../../../constants";
+
 
 export function ImageSlideShow() {
   return (
@@ -59,18 +56,89 @@ export function ImageSlideShow() {
       )}
     >
       <img
-        src={SpaceshipImage}
+        src={ImageOne}
         alt="image 1"
         className="h-full w-full"
       />
       <img
-        src={AnimeHatImage}
+        src={ImageTwo}
         alt="image 1"
         className="h-full w-full "
       />
 
       <img
-        src={CrateImage}
+        src={ImageThree}
+        alt="image 1"
+        className="h-full w-full objetc-fit"
+      />
+
+      <img
+        src={ImageFour}
+        alt="image 1"
+        className="h-full w-full objetc-fit"
+      />
+
+      <img
+        src={ImageFive}
+        alt="image 1"
+        className="h-full w-full objetc-fit"
+      />
+
+      <img
+        src={ImageSix}
+        alt="image 1"
+        className="h-full w-full objetc-fit"
+      />
+
+      <img
+        src={ImageSeven}
+        alt="image 1"
+        className="h-full w-full objetc-fit"
+      />
+
+      <img
+        src={ImageEight}
+        alt="image 1"
+        className="h-full w-full objetc-fit"
+      />
+
+      <img
+        src={ImageNine}
+        alt="image 1"
+        className="h-full w-full objetc-fit"
+      />
+      <img
+        src={ImageTen}
+        alt="image 1"
+        className="h-full w-full objetc-fit"
+      />
+      <img
+        src={ImageEleven}
+        alt="image 1"
+        className="h-full w-full objetc-fit"
+      />
+      <img
+        src={ImageTwelve}
+        alt="image 1"
+        className="h-full w-full objetc-fit"
+      />
+      <img
+        src={ImageThirteen}
+        alt="image 1"
+        className="h-full w-full objetc-fit"
+      />
+      <img
+        src={ImageFourteen}
+        alt="image 1"
+        className="h-full w-full objetc-fit"
+      />
+      <img
+        src={ImageFifteen}
+        alt="image 1"
+        className="h-full w-full objetc-fit"
+      />
+      <img
+        src={ImageSixteen}
         alt="image 1"
         className="h-full w-full objetc-fit"
       />
