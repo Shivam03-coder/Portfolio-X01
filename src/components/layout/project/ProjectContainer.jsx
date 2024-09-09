@@ -3,6 +3,7 @@ import ModelsSection from "./section/ModelsSection";
 import { ThreeDmodelsData } from "../../../data";
 import { ImageSlideShow } from "./section/ImageSlideShow";
 import { Typography } from "@material-tailwind/react";
+import { GfxSLidesSection } from "./section/GfxSLidesSection";
 
 const ProjectContainer = () => {
   return (
@@ -26,6 +27,15 @@ const ProjectContainer = () => {
           OTHER-WORKS
         </Typography>
         <ImageSlideShow />
+      </div>
+      <div className="w-[90%] mx-auto  pb-10">
+        <Typography
+          variant="h3"
+          className="w-[90%] mx-auto underline my-6 underline-offset-4 text-purple-400 font-Varela  "
+        >
+         GFX IMAGES
+        </Typography>
+        <GfxSLidesSection />
       </div>
     </>
   );

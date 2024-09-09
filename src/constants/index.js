@@ -18,8 +18,11 @@ import atm from "../assets/imgs/atm.png";
 import armorcreate from "../assets/imgs/armorcreate.png";
 import arcon_cfrate from "../assets/imgs/arcon_cfrate.png";
 import apc from "../assets/imgs/apc.png";
+import train from "../assets/imgs/train.png";
 import contact from "../assets/imgs/contactimg.png";
 import Experience from "../assets/imgs/Experience.png";
+import Tresurechest from "../assets/imgs/tresure chest.png";
+import Scificratet from "../assets/imgs/scifi cratet.png";
 
 export const ProfileBgSvg = gggyrate;
 export const SignatureImgs = Signature;
@@ -36,6 +39,9 @@ export const OfficechairImage = officechair;
 export const MachineryImage = machinery;
 export const LeverthingImage = leverthing;
 export const ElWallClockImage = elwallclock;
+export const TrainImage = train;
+export const TresurechestImage = Tresurechest;
+export const ScificratetImage = Scificratet;
 export const GrenadesImage = grenades;
 export const CraftingTableImage = craftingtable;
 export const BagsImage = bags;
@@ -82,6 +88,19 @@ export const ImageThirteen = thirteen;
 export const ImageFourteen = fourteen;
 export const ImageFifteen = fifteen;
 export const ImageSixteen = sixteen;
+
+
+// GFX IMAGES
+
+import W from "../assets/GFX/w.png"
+import X from "../assets/GFX/x.png"
+import Y from "../assets/GFX/y.png"
+import Z from "../assets/GFX/z.png"
+
+export const WIMAGS = thirteen;
+export const XIMAGES = fourteen;
+export const YIMAGES = fifteen;
+export const ZIMAGES = sixteen;
 
 
 
