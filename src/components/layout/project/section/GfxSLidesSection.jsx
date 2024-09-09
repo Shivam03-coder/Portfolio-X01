@@ -1,7 +1,6 @@
 import { Carousel, IconButton } from "@material-tailwind/react";
 import { WIMAGS, XIMAGES, YIMAGES, ZIMAGES } from "../../../../constants";
 
-
 export function GfxSLidesSection() {
   return (
     <Carousel
@@ -55,26 +54,10 @@ export function GfxSLidesSection() {
         </IconButton>
       )}
     >
-      <img
-        src={WIMAGS}
-        alt="image 1"
-        className="h-full w-full objetc-fit"
-      />
-      <img
-        src={XIMAGES}
-        alt="image 1"
-        className="h-full w-full objetc-fit"
-      />
-      <img
-        src={YIMAGES}
-        alt="image 1"
-        className="h-full w-full objetc-fit"
-      />
-      <img
-        src={ZIMAGES}
-        alt="image 1"
-        className="h-full w-full objetc-fit"
-      />
+      <img src={YIMAGES} alt="image 1" className="h-full w-full objetc-fit" />
+      <img src={WIMAGS} alt="image 1" className="h-full w-full objetc-fit" />
+      <img src={XIMAGES} alt="image 1" className="h-full w-full objetc-fit" />
+      <img src={ZIMAGES} alt="image 1" className="h-full w-full objetc-fit" />
     </Carousel>
   );
 }

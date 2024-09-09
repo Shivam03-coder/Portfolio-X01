@@ -51,7 +51,6 @@ export const ArconCfrateImage = arcon_cfrate;
 export const ApCImage = apc;
 export const ContactImage = contact;
 
-
 // IMAGES IN SLIDE SHOW
 
 import one from "../assets/aishaimgs/1.jpeg";
@@ -89,19 +88,32 @@ export const ImageFourteen = fourteen;
 export const ImageFifteen = fifteen;
 export const ImageSixteen = sixteen;
 
-
 // GFX IMAGES
 
-import W from "../assets/GFX/w.png"
-import X from "../assets/GFX/x.png"
-import Y from "../assets/GFX/y.png"
-import Z from "../assets/GFX/z.png"
+import W from "../assets/GFX/w.jpeg";
+import X from "../assets/GFX/x.png";
+import Y from "../assets/GFX/y.png";
+import Z from "../assets/GFX/z.png";
 
 export const WIMAGS = W;
 export const XIMAGES = X;
 export const YIMAGES = Y;
 export const ZIMAGES = Z;
 
+// RENDER IMAGES IN REMAINING MODELS
+import P from "../assets/remaingmodelimgs/p.png";
+import Q from "../assets/remaingmodelimgs/q.png";
+import R from "../assets/remaingmodelimgs/r.png";
+import S from "../assets/remaingmodelimgs/s.png";
+import T from "../assets/remaingmodelimgs/t.png";
+import U from "../assets/remaingmodelimgs/u.png";
+
+export const PIMAGES = P;
+export const QIMAGES = Q;
+export const RIMAGES = R;
+export const SIMAGES = S;
+export const TIMAGES = T;
+export const UIMAGES = U;
 
 
 // ICONS

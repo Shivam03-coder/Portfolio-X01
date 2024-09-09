@@ -1,5 +1,5 @@
 import { Carousel, IconButton } from "@material-tailwind/react";
-import { ImageEight, ImageEleven, ImageFifteen, ImageFive, ImageFour, ImageFourteen, ImageNine, ImageOne, ImageSeven, ImageSix, ImageSixteen, ImageTen, ImageThirteen, ImageThree, ImageTwelve, ImageTwo } from "../../../../constants";
+import { ImageEight, ImageEleven, ImageFifteen, ImageFive, ImageFour, ImageFourteen, ImageNine, ImageOne, ImageSeven, ImageSix, ImageSixteen, ImageTen, ImageThirteen, ImageThree, ImageTwelve, ImageTwo, PIMAGES, QIMAGES, RIMAGES, SIMAGES, TIMAGES, UIMAGES } from "../../../../constants";
 
 
 export function ImageSlideShow() {
@@ -55,6 +55,36 @@ export function ImageSlideShow() {
         </IconButton>
       )}
     >
+      <img
+        src={PIMAGES}
+        alt="image 1"
+        className="h-full w-full"
+      />
+      <img
+        src={QIMAGES}
+        alt="image 1"
+        className="h-full w-full"
+      />
+      <img
+        src={RIMAGES}
+        alt="image 1"
+        className="h-full w-full"
+      />
+      <img
+        src={SIMAGES}
+        alt="image 1"
+        className="h-full w-full"
+      />
+      <img
+        src={TIMAGES}
+        alt="image 1"
+        className="h-full w-full"
+      />
+      <img
+        src={UIMAGES}
+        alt="image 1"
+        className="h-full w-full"
+      />
       <img
         src={ImageOne}
         alt="image 1"
