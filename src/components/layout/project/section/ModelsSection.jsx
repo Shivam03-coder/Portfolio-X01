@@ -65,12 +65,11 @@ const ModelsSection = ({ model }) => {
         transition={{ duration: 2 }}
         key={model.id}
         className="border rounded-2xl bg-gray-800 border-customPink-600 shadow-glass mb-16"
-        style={{ width: "360px" }}
+        style={{ width: "380px", height:"215px" }}
       >
           <img
             src={model.modelimg}
             alt="Model-Image"
-            className="h-auto w-full mx-auto  size-[360px]"
           />
        <Canvas style={{ width: "100%", height: "100%" }} camera={{ position: [0, 0, 5], fov: 40 }}>
   {/* Reduced ambient light intensity */}
