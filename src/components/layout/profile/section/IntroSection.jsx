@@ -16,15 +16,16 @@ const IntroSection = () => {
         className="text-justify font-Poppins hidden md:block font-medium"
         variant="body1"
       >
+        Step into my world of 3D artistry, where creativity and technology
+        intertwine. My journey began in 2019 when I first discovered my passion
+        for bringing S
+        <span className="text-customPink-500"> ideas to life in 3D.</span>, all
+        brought to life using{" "}
+        <span className="text-customPink-500">Blender</span> . Whether you're
+        ince then, Blender has been my canvas, allowing me to explore endless
+        possibilities in creating 3D models, animations, and visual effects.
         Delve into the world of 3D artistry where creativity meets technology.
         In this portfolio, you'll discover a collection of meticulously crafted
-        <span className="text-customPink-500">
-          {" "}
-          3D models, animations, and visual effects
-        </span>
-        , all brought to life using{" "}
-        <span className="text-customPink-500">Blender</span> . Whether you're
-        here to appreciate the art, learn new techniques.
       </Typography>
     </section>
   );

@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <section className="min-h-[11vh] sticky top-0 z-50 bg-primary-800 w-full text-white px-5 flex justify-between items-center">
       <Typography variant="h4" className="font-Varela">
-        <span className="text-customPink-600">Aishana</span> <span>Singh</span>
+        <span className="text-customPink-600">Aishna</span> <span>Singh</span>
       </Typography>
       <IconButton onClick={handleDrawer} className="bg-transparent shadow-none">
         <MenuIcon className="text-customPink-500 size-6" />

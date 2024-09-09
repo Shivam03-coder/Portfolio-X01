@@ -20,45 +20,33 @@ const ThreeDModels = ({ path }) => {
     const maxDimension = Math.max(bbox.x, bbox.y, bbox.z);
     return 2 / maxDimension; // Adjust the size within a standard range
   }, [bbox]);
-
-  // Apply mixed color material to the model
-  // const applyMixedColorMaterial = (object) => {
-  //   object.traverse((child) => {
-  //     if (child.isMesh) {
-  //       const mixRatio = Math.random(); // Random ratio for blending
-  //       const mixedColor = new THREE.Color().lerpColors(
-  //         new THREE.Color("white"), // White
-  //         new THREE.Color("black"), // Black
-  //         mixRatio // Blend ratio
-  //       );
-
-  //       child.material = new THREE.MeshStandardMaterial({
-  //         color: mixedColor,
-  //         emissive: mixedColor,
-  //         emissiveIntensity: 1.5,
-  //       });
-  //     }
-  //   });
-  // };
-  const applyWhiteMaterial = (object) => {
+  const applyMixedColorMaterial = (object) => {
     object.traverse((child) => {
       if (child.isMesh) {
-        // Apply a MeshStandardMaterial with white color and emissive properties
+        const mixRatio = Math.random() * 0.5; // Random ratio for blending, limiting the brightness
+        const mixedColor = new THREE.Color().lerpColors(
+          new THREE.Color("white"), // White
+          new THREE.Color("gray"),  // Gray to soften the brightness
+          mixRatio // Blend ratio
+        );
+  
         child.material = new THREE.MeshStandardMaterial({
-          color: new THREE.Color("white"), // Set the base color to white
-          emissive: new THREE.Color("white"), // Make it glow with white
-          emissiveIntensity: 1.5, // Adjust glow intensity (can tweak this value)
-          roughness: 0.5, // Optional: Adjust the roughness for more realism
-          metalness: 0.3, // Optional: Give it a metallic feel (tweakable based on your needs)
+          color: mixedColor,
+          emissive: mixedColor,
+          emissiveIntensity: 0.3, // Reduced emissive intensity for softer glow
+          metalness: 0.8, // Optional: slight metalness for better visual texture
+          roughness: 0.6, // Optional: slightly rough surface for subtle shading
         });
       }
     });
   };
   
+ 
+  
   
 
   useMemo(() => {
-    applyWhiteMaterial(model.scene);
+    applyMixedColorMaterial(model.scene);
   }, [model]);
 
   return (
@@ -84,12 +72,17 @@ const ModelsSection = ({ model }) => {
             alt="Model-Image"
             className="h-auto w-full mx-auto  size-[360px]"
           />
-        <Canvas  style={{ width: "100%", height: "100%" }} camera={{ position: [0, 0, 5], fov: 40 }}>
-          <ambientLight intensity={0.8} />
-          <pointLight position={[0, 0, 6]} intensity={2} />
-          <ThreeDModels path={model.path} />
-          <OrbitControls />
-        </Canvas>
+       <Canvas style={{ width: "100%", height: "100%" }} camera={{ position: [0, 0, 5], fov: 40 }}>
+  {/* Reduced ambient light intensity */}
+  <ambientLight intensity={0.3} />
+  
+  {/* Reduced point light intensity */}
+  <pointLight position={[0, 0, 6]} intensity={1.5} />
+  
+  <ThreeDModels path={model.path} position={[0, 0, 0]} /> {/* Centering the model */}
+  <OrbitControls target={[0, 0, 0]} /> {/* Ensuring the controls target the center */}
+</Canvas>
+
       </Carousel>
     </section>
   );
