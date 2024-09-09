@@ -10,7 +10,7 @@ const ProjectContainer = () => {
     <>
       <Typography
         variant="h3"
-        className="w-[90%] mx-auto underline underline-offset-4 text-purple-400 font-Varela  "
+        className="w-[90%] mx-auto  underline underline-offset-4 text-purple-400 font-Varela  "
       >
         HARD SURFACES
       </Typography>
@@ -19,23 +19,36 @@ const ProjectContainer = () => {
           <ModelsSection model={model} />
         ))}
       </div>
-      <div className="w-[90%] mx-auto  pb-10">
+
+      <div className="w-[90%] md:w-[80%] mx-auto pb-10">
+        {" "}
+        {/* Decrease width to 80% and center */}
         <Typography
           variant="h3"
-          className="w-[90%] mx-auto underline my-6 underline-offset-4 text-purple-400 font-Varela  "
+          className="w-[90%] mx-auto text-center underline my-6 underline-offset-4 text-purple-400 font-Varela"
         >
-          OTHER-WORKS
+             OTHER-WORKS
         </Typography>
-        <ImageSlideShow />
+        <div className="w-[90%] mx-auto">
+          {" "}
+          {/* Further decrease the width of the GFX slider */}
+          <ImageSlideShow />
+        </div>
       </div>
-      <div className="w-[90%] mx-auto  pb-10">
+      <div className="w-[90%] md:w-[80%] mx-auto pb-10">
+        {" "}
+        {/* Decrease width to 80% and center */}
         <Typography
           variant="h3"
-          className="w-[90%] mx-auto underline my-6 underline-offset-4 text-purple-400 font-Varela  "
+          className="w-[90%] mx-auto text-center underline my-6 underline-offset-4 text-purple-400 font-Varela"
         >
-         GFX IMAGES
+          GFX IMAGES
         </Typography>
-        <GfxSLidesSection />
+        <div className="w-[90%] mx-auto">
+          {" "}
+          {/* Further decrease the width of the GFX slider */}
+          <GfxSLidesSection />
+        </div>
       </div>
     </>
   );

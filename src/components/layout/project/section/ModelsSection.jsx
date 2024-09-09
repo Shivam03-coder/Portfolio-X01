@@ -33,7 +33,7 @@ const ThreeDModels = ({ path }) => {
         child.material = new THREE.MeshStandardMaterial({
           color: mixedColor,
           emissive: mixedColor,
-          emissiveIntensity: 0.3, // Reduced emissive intensity for softer glow
+          emissiveIntensity: 0.5, // Reduced emissive intensity for softer glow
           metalness: 0.8, // Optional: slight metalness for better visual texture
           roughness: 0.6, // Optional: slightly rough surface for subtle shading
         });
