@@ -1,7 +1,7 @@
 //IMGS
 import Signature from "../assets/imgs/signature.png";
 import gggyrate from "../assets/svgs/gggyrate.svg";
-import ProfileImage from "../assets/imgs/Profileimage.png";
+import ProfileImage from "../assets/imgs/Profileimage.jpeg";
 import robot from "../assets/imgs/robot.png";
 import pouches from "../assets/imgs/pouches.png";
 import pipe from "../assets/imgs/pipe.png";
