@@ -11,9 +11,8 @@ const TextSection = () => {
         <span className="text-customPink-600 inline-flex gap items-center">
           Invisible
           <SettingIcon className="ml-2 size-6" />
-          <img src={SignatureImgs} alt="" />
+          <img className="hidden md:block" src={SignatureImgs} alt="" />
         </span>
-        .
       </Typography>
     </section>
   );

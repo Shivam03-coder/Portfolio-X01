@@ -123,22 +123,7 @@ export function ImageSlideShow() {
         className="h-full w-full objetc-fit"
       />
       <img
-        src={ImageThirteen}
-        alt="image 1"
-        className="h-full w-full objetc-fit"
-      />
-      <img
         src={ImageFourteen}
-        alt="image 1"
-        className="h-full w-full objetc-fit"
-      />
-      <img
-        src={ImageFifteen}
-        alt="image 1"
-        className="h-full w-full objetc-fit"
-      />
-      <img
-        src={ImageSixteen}
         alt="image 1"
         className="h-full w-full objetc-fit"
       />

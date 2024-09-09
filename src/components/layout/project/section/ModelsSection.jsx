@@ -76,16 +76,14 @@ const ModelsSection = ({ model }) => {
       <Carousel
         transition={{ duration: 2 }}
         key={model.id}
-        className="border rounded-2xl mx-5 bg-gray-800 border-customPink-600 shadow-glass mb-16"
+        className="border rounded-2xl bg-gray-800 border-customPink-600 shadow-glass mb-16"
         style={{ width: "360px" }}
       >
-        <div>
           <img
             src={model.modelimg}
             alt="Model-Image"
-            className="h-auto w-full  size-[360px]"
+            className="h-auto w-full mx-auto  size-[360px]"
           />
-        </div>
         <Canvas  style={{ width: "100%", height: "100%" }} camera={{ position: [0, 0, 5], fov: 40 }}>
           <ambientLight intensity={0.8} />
           <pointLight position={[0, 0, 6]} intensity={2} />
