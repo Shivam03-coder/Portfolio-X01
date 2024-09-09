@@ -25,7 +25,7 @@ const ProjectContainer = () => {
         {/* Decrease width to 80% and center */}
         <Typography
           variant="h3"
-          className="w-[90%] mx-auto text-center underline my-6 underline-offset-4 text-purple-400 font-Varela"
+          className="w-[90%] mx-auto  underline my-6 underline-offset-4 text-purple-400 font-Varela"
         >
              OTHER-WORKS
         </Typography>
@@ -40,7 +40,7 @@ const ProjectContainer = () => {
         {/* Decrease width to 80% and center */}
         <Typography
           variant="h3"
-          className="w-[90%] mx-auto text-center underline my-6 underline-offset-4 text-purple-400 font-Varela"
+          className="w-[90%] mx-auto  underline my-6 underline-offset-4 text-purple-400 font-Varela"
         >
           GFX IMAGES
         </Typography>

@@ -97,10 +97,10 @@ import X from "../assets/GFX/x.png"
 import Y from "../assets/GFX/y.png"
 import Z from "../assets/GFX/z.png"
 
-export const WIMAGS = thirteen;
-export const XIMAGES = fourteen;
-export const YIMAGES = fifteen;
-export const ZIMAGES = sixteen;
+export const WIMAGS = W;
+export const XIMAGES = X;
+export const YIMAGES = Y;
+export const ZIMAGES = Z;
 
 
 
