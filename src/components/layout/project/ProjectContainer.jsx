@@ -27,7 +27,7 @@ const ProjectContainer = () => {
           variant="h3"
           className="w-[90%] mx-auto   my-6 text-purple-400 font-Varela"
         >
-          Other Hard Surfance Modeling Work
+          Other Hard Surface Modeling Work
         </Typography>
         <div className="w-[90%] mx-auto">
           {" "}
