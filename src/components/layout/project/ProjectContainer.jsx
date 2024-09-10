@@ -10,9 +10,9 @@ const ProjectContainer = () => {
     <>
       <Typography
         variant="h3"
-        className="w-[90%] mx-auto  underline underline-offset-4 text-purple-400 font-Varela  "
+        className="w-[90%] mx-auto text-purple-400 font-Varela  "
       >
-        HARD SURFACES
+        Hard Surface Modeling
       </Typography>
       <div className="grid md:grid-cols-3 py-10 gap-8   min-h-[89vh] place-items-center">
         {ThreeDmodelsData.map((model) => (
@@ -25,9 +25,9 @@ const ProjectContainer = () => {
         {/* Decrease width to 80% and center */}
         <Typography
           variant="h3"
-          className="w-[90%] mx-auto   my-6 underline-offset-4 text-purple-400 font-Varela"
+          className="w-[90%] mx-auto   my-6 text-purple-400 font-Varela"
         >
-             OTHER-WORKS
+          Other Hard Surfance Modeling Work
         </Typography>
         <div className="w-[90%] mx-auto">
           {" "}
@@ -40,9 +40,9 @@ const ProjectContainer = () => {
         {/* Decrease width to 80% and center */}
         <Typography
           variant="h3"
-          className="w-[90%] mx-auto   my-6 underline-offset-4 text-purple-400 font-Varela"
+          className="w-[90%] mx-auto   my-6 text-purple-400 font-Varela"
         >
-          GFX IMAGES
+          GFX Images
         </Typography>
         <div className="w-[90%] mx-auto">
           {" "}
